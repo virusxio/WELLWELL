@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Leona 💖</title>
+
+<style>
+body{
+    margin:0;
+    overflow:auto;
+    background:#E2F9A5;
+    font-family: 'Georgia', serif;
+}
+
+/* background effects */
+.bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.code{
+    position:absolute;
+    top:-40px;
+    color:#ff4da6;
+    font-family: monospace;
+    font-size:16px;
+    opacity:0.8;
+    text-shadow:0 0 8px #ff4da6;
+    animation: fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+.heart{
+    position:absolute;
+    width:18px;
+    height:18px;
+    background:red;
+    transform:rotate(45deg);
+    animation:fall linear infinite;
+}
+
+.heart::before,
+.heart::after{
+    content:'';
+    position:absolute;
+    width:18px;
+    height:18px;
+    background:red;
+    border-radius:50%;
+}
+
+.heart::before{ top:-9px; left:0; }
+.heart::after{ left:-9px; top:0; }
+
+.star{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 10px white, 0 0 20px white;
+    animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+    from{ opacity:0.2; transform:scale(0.8);}
+    to{ opacity:1; transform:scale(1.5);}
+}
+
+.letter{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70%;
+    max-width:600px;
+    padding:30px;
+    background:#fdf5e6;
+    border:2px solid #d2b48c;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    border-radius:10px;
+    line-height:1.6;
+    color:#5a3e2b;
+    overflow-y:auto;
+    max-height:70vh;
+    z-index:5;
+}
+
+.buttons{
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translateX(-50%);
+    display:none;
+    gap:20px;
+    z-index:6;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#yes{ background:#ff4d6d; color:white; }
+#no{ background:#333; color:white; }
+
+/* SECOND PAGE STYLE */
+.centerText{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#ff4da6;
+    font-size:40px;
+    font-family: monospace;
+    text-shadow:0 0 10px #ff4da6, 0 0 30px #ff4da6;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{ transform:translate(-50%,-50%) scale(1); }
+    50%{ transform:translate(-50%,-50%) scale(1.1); }
+    100%{ transform:translate(-50%,-50%) scale(1); }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<audio id="music" loop>
+  <source src="mylove.mp3" type="audio/mpeg">
+</audio>
+
+<div class="letter"> My sweetest Leonaaa,<br><br> I want to tell you something that i really love you so much, i know you love me too! and im very excited for us to go more closer than we are. You are very precious to me. You are cute, funny, Adorable, beautiful and stunning you are alot more but i cant describe more because im dumb sometimes hahaha. We love, laugh and live together. Since the day We've met, We were enemies first you use to cuss at me alot and me too, i love to troll at yo u and now look we became so close i did not expect. The day we met 15/6/26 was unexpected. I’ve been thinking about this for a while, and I just wanted to be honest with you. You’re really special to me not just as someone I talk to, but as someone I genuinely care, love and be freaky about. Being around you makes everything feel Amazing!, and I catch myself smiling at the smallest things because of you and you do that too.. I really like to see if we could be something more than just friends. I LOVE YOU SOOOOO MUCHHHHHHHH,
+When I heard your voice for the first time on Discord, I was honestly so nervous. I didn’t even realize I had pulled someone as amazing as you. In that moment, something just clicked, and I started falling for you without even noticing how fast it was happening. I’m genuinely so grateful to God for bringing you into my life.
+
+My love for you will never change. I love everything about you, your voice, the way you giggle when you talk, and even the way you get mad when I copy you hahaha. It’s all so perfect to me. I love you more than I can even explain. Words honestly feel too small for what I feel for you.
+
+You are incredibly beautiful. Your smile and your eyes make me fall in love with you more and more every single time. The way you exist, the way you talk, and the way you care all mean so much to me.
+
+I love the little moments we share, the laughs, the random talks, even the silly arguments. Being with you makes everything feel lighter and happier. You’ve become such an important part of my life, and I can’t imagine my days without you anymore.
+
+You make me feel something I’ve never felt before, something real and something deep. You’re not just someone I like, you’re someone I truly love with my whole heart.
+
+No matter what happens, I’ll always care about you, support you, and stand by you. I want to keep making memories with you, keep laughing with you, and keep growing closer to you every day.
+
+You’re not just special to me, you’re everything to me. Promise me one thing LEONA, you will never ever leave me behind, we will never break up , even if we had fights and problems we will face it! we will stick together as always as last, I want to have your kids your beautiful kids, I just cant wait for the future to happen with me and you, When we will meet i will give u tight hug and kisses on cheeks. And promise me one thing more Leona, if anything bad happen you always have to discuss with me or any problems regards me we will try to fix and YOU will never harm yourself, ill always make you happy.
+
+Your Hasnain <3.
+<br><br> WILL YOU BE MY GIRLFRIEND?<br><br> My beautifull wonderful LEONA. </div>
+
+<div class="buttons" id="buttons">
+    <button id="yes">YES 💖</button>
+    <button id="no">NO</button>
+</div>
+
+<script>
+
+// music
+document.body.addEventListener("click", () => {
+    document.getElementById("music").play();
+}, { once:true });
+
+// falling text
+const messages = ["I love you Leona","💖 LEONA 💖","I LOVE YOU","YOU ARE MINE"];
+
+function spawn(){
+    const el = document.createElement("div");
+    el.className = "code";
+    el.innerText = messages[Math.floor(Math.random()*messages.length)];
+    el.style.left = Math.random()*100 + "vw";
+    el.style.animationDuration = (3 + Math.random()*3) + "s";
+    document.querySelector(".bg").appendChild(el);
+    setTimeout(()=> el.remove(), 6000);
+}
+setInterval(spawn, 120);
+
+// hearts
+for(let i=0;i<25;i++){
+    const h=document.createElement('div');
+    h.className='heart';
+    h.style.left=Math.random()*100+'vw';
+    h.style.animationDuration=(4+Math.random()*4)+'s';
+    document.body.appendChild(h);
+}
+
+// stars
+for(let i=0;i<5;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    s.style.top=Math.random()*50+'%';
+    s.style.left=Math.random()*100+'%';
+    document.body.appendChild(s);
+}
+
+// show buttons
+setTimeout(()=>{
+    document.getElementById("buttons").style.display="flex";
+},3000);
+
+// NO button logic
+let noState = 0;
+const noBtn = document.getElementById("no");
+noBtn.onclick = () => {
+    noState++;
+    if(noState === 1) noBtn.innerText = "Are you sure?";
+    else if(noState === 2) noBtn.innerText = "You really wanna try me.";
+    else noBtn.innerText = "Yes";
+};
+
+// ✅ YES → SWITCH TO SECOND PAGE
+document.getElementById("yes").onclick = () => {
+
+    document.body.innerHTML = "";
+    document.body.style.background = "black";
+    document.body.style.overflow = "hidden";
+
+    const center = document.createElement("div");
+    center.className = "centerText";
+    center.innerText = "I LOVE YOU LEONA 💖";
+    document.body.appendChild(center);
+
+    const msgs = [
+    "I love you Leona",
+    "I love you 💖",
+    "Leona 💗",
+    "YOU ARE MINE 💕",
+    "I LOVE YOU"
+    ];
+
+    setInterval(()=>{
+        const el = document.createElement("div");
+        el.className = "code";
+        el.innerText = msgs[Math.floor(Math.random()*msgs.length)];
+        el.style.left = Math.random()*100 + "vw";
+        el.style.animationDuration = (3 + Math.random()*3) + "s";
+        document.body.appendChild(el);
+        setTimeout(()=> el.remove(), 6000);
+    },120);
+};
+
+</script>
+
+</body>
+</html>
